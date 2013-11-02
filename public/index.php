@@ -7,10 +7,6 @@
  * @license http://opensource.org/licenses/MIT MIT
  */
 
-ini_set('display_errors', true);
-ini_set('error_reporting', E_ALL);
-xdebug_disable();
-
 // Define the application root
 define('APP_ROOT', realpath(dirname(__FILE__) . '/../'));
 
