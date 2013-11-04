@@ -10,9 +10,8 @@
 // Define the application root
 define('APP_ROOT', realpath(dirname(__FILE__) . '/../'));
 
-
-// Load the application core
-require APP_ROOT . '/core/femto.php';
+// Load the Composer autoloader
+require APP_ROOT . '/vendor/autoload.php';
 
 // Get an instance of Femto
 $app = new Femto;

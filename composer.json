@@ -1,0 +1,14 @@
+{
+    "name": "femto/femto",
+    "description": "A tiny PHP framework for tiny sites.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James White",
+            "email": "dev.jameswhite@gmail.com"
+        }
+    ],
+    "require": {
+        "femto/core": "~0.1"
+    }
+}

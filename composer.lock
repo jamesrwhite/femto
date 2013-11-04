@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "7b4dd441a0d9d8dc3a3775ac6cb654ad",
+    "packages": [
+        {
+            "name": "femto/core",
+            "version": "v0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jamesrwhite/femto-core.git",
+                "reference": "a0f585ce00da4914706106dd4cede3aa3e3b8d1b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jamesrwhite/femto-core/zipball/a0f585ce00da4914706106dd4cede3aa3e3b8d1b",
+                "reference": "a0f585ce00da4914706106dd4cede3aa3e3b8d1b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "femto.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James White",
+                    "email": "dev.jameswhite@gmail.com",
+                    "homepage": "http://jamesrwhite.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "The core of the Femto framework",
+            "homepage": "https://github.com/jamesrwhite/femto-core",
+            "keywords": [
+                "femto"
+            ],
+            "time": "2013-11-04 22:27:17"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
