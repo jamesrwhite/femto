@@ -1,13 +1,20 @@
 {
     "name": "femto/femto",
+    "type": "project",
     "description": "A tiny PHP framework for tiny sites.",
+    "keywords": ["femto", "framework", "tiny", "micro"],
     "license": "MIT",
     "authors": [
         {
             "name": "James White",
-            "email": "dev.jameswhite@gmail.com"
+            "email": "dev.jameswhite@gmail.com",
+            "homepage": "http://jamesrwhite.co.uk",
+            "role": "Developer"
         }
     ],
+    "require": {
+        "php": ">=5.3.0"
+    },
     "require": {
         "femto/core": "~0.1"
     }
