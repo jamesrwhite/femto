@@ -62,6 +62,17 @@ Contributing
 
 Femto is very early in development right now but if you have any ideas on how it could be imrproved please feel free to submit a pull requset and I will do my best to review it as soon as possible. At the moment my plan is to keep Femto as simple as possible, so for example I don't have any plans to add features like support for databases as that's not what I see Femto as being for.
 
+Roadmap
+========
+
+I have no ETA's for these but listed below are some rough things I have planned:
+
+- Integrate Composer autoloading
+- Make Femto itself Composer compatible and add it to packagist
+- Add some helper functions in for general tasks like string manipulation etc
+- Add support for templates, ideally working in a similar way to Django/Twig. Maybe just use Twig?
+- Better environment support, like how Laravel allows folders in the config folder that correspond to the env
+
 License
 =======
 
