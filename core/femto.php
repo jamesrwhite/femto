@@ -1,7 +1,7 @@
 <?php
 
 // Load the exceptions that we are going to use
-require CORE_ROOT . '/exceptions.php';
+require __DIR__ . '/exceptions.php';
 
 /**
  * Femto Framework
@@ -20,9 +20,15 @@ class Femto
 
 	/**
 	 * Holds the name of the page is being displayed
-	 * @var
+	 * @var string
 	 */
 	private $_page;
+
+	/**
+	 * Directory path of the application route, this needs to be passed in
+	 * @var string
+	 */
+	private $_app_root;
 
 	/**
 	 * Used to indicate that the file type is a page
@@ -43,12 +49,29 @@ class Femto
 	const FEMTO_CONFIG = 3;
 
 	/**
+	 * Set the application root directory
+	 * @param string $app_root
+	 * @return void
+	 */
+	public function setAppRoot($app_root)
+	{
+		$this->_app_root = $app_root;
+	}
+
+	/**
 	 * The Femto application launcher used in the index.php file
 	 *
 	 * @return void
 	 */
 	public function launch()
 	{
+		// Was the application route defined?
+		if ($this->_app_root === null) {
+
+			throw new FemtoException('You must define the application route first, do so by calling $femto->setAppRoot($dir)');
+
+		}
+
 		// Start the output buffer captain!
 		ob_start();
 
@@ -166,13 +189,13 @@ class Femto
 		switch ($type) {
 
 			case self::FEMTO_PAGE:
-				return APP_ROOT . "/pages/{$file}.php";
+				return "{$this->_app_root}/pages/{$file}.php";
 
 			case self::FEMTO_FRAGMENT:
-				return APP_ROOT . "/fragments/{$file}.php";
+				return "{$this->_app_root}/fragments/{$file}.php";
 
 			case self::FEMTO_CONFIG:
-				return APP_ROOT . "/config/{$file}.php";
+				return "{$this->_app_root}/config/{$file}.php";
 
 		}
 	}

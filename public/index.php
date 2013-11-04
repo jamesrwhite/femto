@@ -10,14 +10,15 @@
 // Define the application root
 define('APP_ROOT', realpath(dirname(__FILE__) . '/../'));
 
-// Define the core folder root
-define('CORE_ROOT', APP_ROOT . '/core');
 
 // Load the application core
-require CORE_ROOT . '/femto.php';
+require APP_ROOT . '/core/femto.php';
 
 // Get an instance of Femto
 $app = new Femto;
+
+// Set the application root
+$app->setAppRoot(APP_ROOT);
 
 // Leeroyyyyy!
 $app->launch();
