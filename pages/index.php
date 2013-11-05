@@ -1,5 +1,3 @@
-<?php $this->useFragment('header', array('title' => 'Femto')); ?>
+<?php $this->useTemplate('main', array('title' => 'Home')); ?>
 
-	<h1>Hello World</h1>
-
-<?php $this->useFragment('footer'); ?>
+<h1>Hello World</h1>
