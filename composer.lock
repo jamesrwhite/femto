@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "acfd78228909013314569bbf132f340f",
+    "hash": "b281f4a596c050a120c3b5a2480044ae",
     "packages": [
         {
             "name": "femto/core",
-            "version": "v0.1.2",
+            "version": "v0.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jamesrwhite/femto-core.git",
-                "reference": "d60e35f4e1ccc46b8d602f7c372e9da5bd53b8ed"
+                "reference": "385abd56af605bc47f35f8bd2ebed16ffb488900"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jamesrwhite/femto-core/zipball/d60e35f4e1ccc46b8d602f7c372e9da5bd53b8ed",
-                "reference": "d60e35f4e1ccc46b8d602f7c372e9da5bd53b8ed",
+                "url": "https://api.github.com/repos/jamesrwhite/femto-core/zipball/385abd56af605bc47f35f8bd2ebed16ffb488900",
+                "reference": "385abd56af605bc47f35f8bd2ebed16ffb488900",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
             "keywords": [
                 "femto"
             ],
-            "time": "2013-11-05 00:37:03"
+            "time": "2013-11-05 14:13:36"
         }
     ],
     "packages-dev": [
