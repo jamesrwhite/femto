@@ -67,8 +67,8 @@ Roadmap
 
 I have no ETA's for these but listed below are some rough things I have planned:
 
-- Integrate Composer autoloading
-- Make Femto itself Composer compatible and add it to packagist
+- <del>Integrate Composer autoloading</del> Done in v0.2.0
+- <del>Make Femto itself Composer compatible and add it to packagist</del> Done in v0.2.0, see seperate jamesrwhite/femto-core repo
 - Add some helper functions in for general tasks like string manipulation etc
 - Add support for templates, ideally working in a similar way to Django/Twig. Maybe just use Twig?
 - Better environment support, like how Laravel allows folders in the config folder that correspond to the env
