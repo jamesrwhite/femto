@@ -13,7 +13,7 @@ Usage
 
 <h4>Pages and Fragments</h4>
 
-Femto is based on the concept of 'pages' and 'fragments'. A page maps directly to the URL at present, for example a request to yoursite.com/contact would try to load the page in pages/contact.php. A page can be compromised of any code you want and use multiple fragments, consider this 'Hello World' example:
+Femto is based on the concept of 'pages', 'templates' and 'fragments'. A page maps directly to the URL at present, for example a request to yoursite.com/contact would try to load the page in pages/contact.php. A page can be compromised of any code you want and use multiple fragments. A page can also 'use' a template, a template can consist of several fragments and common code you want to have on multiple pages. For example every page on your site is likely to need to use the header and footer fragments you have set up, a template would be a perfect use case for this. Consider the example set up below:
 
 <b>fragments/header.php</b>
 
@@ -28,14 +28,21 @@ Femto is based on the concept of 'pages' and 'fragments'. A page maps directly t
 
     </body>
     </html>
-    
-<b>pages/index.php</b>
 
-    <?php $this->useFragment('header', array('title' => 'Femto')); ?>
+<b>templates/main.php</b>
 
-	    <h1>Hello World</h1>
+    <?php $this->useFragment('header', array('title' => $title)); ?>
+
+    <?php $this->templateContent(); ?>
 
     <?php $this->useFragment('footer'); ?>
+
+<b>pages/index.php</b>
+
+    <?php $this->useTemplate('main', array('title' => 'Home Page')); ?>
+    
+    <h1>Hello World</h1>
+    
 
 It's also worth noting it's possible to embed a fragment inside another fragment.
 
@@ -70,7 +77,7 @@ I have no ETA's for these but listed below are some rough things I have planned:
 - <del>Integrate Composer autoloading</del> Done in v0.2.0
 - <del>Make Femto itself Composer compatible and add it to packagist</del> Done in v0.2.0, see seperate jamesrwhite/femto-core repo
 - Add some helper functions in for general tasks like string manipulation etc
-- Add support for templates, ideally working in a similar way to Django/Twig. Maybe just use Twig?
+- <del>Add support for templates, ideally working in a similar way to Django/Twig.</del> Basic implementation in v0.3.0!
 - Better environment support, like how Laravel allows folders in the config folder that correspond to the env
 
 License
