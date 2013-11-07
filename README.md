@@ -58,11 +58,11 @@ Femto also supports retrieving pre-defined configuration variables like so ````$
         'env' => 'development',
     );
 
-This is a very basic example that by default Femto uses to determine how to handle 500 errors in it's femto/500.php fragment but you could use config variables for anything. You could store a list of products for example.
+This is a very basic example that by default Femto uses to determine how to handle 500 errors in it's 500.php page but you could use config variables for anything. You could store a list of products for example.
 
 <h4>Error Handling<h4>
 
-Femto has very basic exception based error handling, if a page is requested that does not have a corresponding file in the pages directory internally a FemtoPageNotFoundException is thrown which Femto catches and if it exists will load the femto/400 fragment and returns a HTTP 404 status code. Femto also handles internal application errors such as when you request a fragment or configuration variable that doesn't exist, when this happens it tries to load the femto/500 fragment if it exists and returns a HTTP 500 status code.
+Femto has very basic exception based error handling, if a page is requested that does not have a corresponding file in the pages directory internally a FemtoPageNotFoundException is thrown which Femto catches and if it exists will load pages/400.php and returns a HTTP 404 status code. Femto also handles internal application errors such as when you request a fragment or configuration variable that doesn't exist, when this happens it tries to load pages/500.php if it exists and returns a HTTP 500 status code.
 
 Contributing
 ============
@@ -76,7 +76,7 @@ I have no ETA's for these but listed below are some rough things I have planned:
 
 - <del>Integrate Composer autoloading</del> Done in v0.2.0
 - <del>Make Femto itself Composer compatible and add it to packagist</del> Done in v0.2.0, see seperate jamesrwhite/femto-core repo
-- Add some helper functions in for general tasks like string manipulation etc
+- <del>Add some helper functions in for general tasks like string manipulation etc</del>Can be accomplished via a composer package
 - <del>Add support for templates, ideally working in a similar way to Django/Twig.</del> Basic implementation in v0.3.0!
 - Better environment support, like how Laravel allows folders in the config folder that correspond to the env
 
