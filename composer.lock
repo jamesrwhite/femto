@@ -7,16 +7,16 @@
     "packages": [
         {
             "name": "femto/core",
-            "version": "v0.2.1",
+            "version": "v0.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jamesrwhite/femto-core.git",
-                "reference": "a31bca6ebba46da23ed7bc668c6c607c9f7c8075"
+                "reference": "f6d48e0219f5957b413d0de709ab34a98eec133c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jamesrwhite/femto-core/zipball/a31bca6ebba46da23ed7bc668c6c607c9f7c8075",
-                "reference": "a31bca6ebba46da23ed7bc668c6c607c9f7c8075",
+                "url": "https://api.github.com/repos/jamesrwhite/femto-core/zipball/f6d48e0219f5957b413d0de709ab34a98eec133c",
+                "reference": "f6d48e0219f5957b413d0de709ab34a98eec133c",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
             "keywords": [
                 "femto"
             ],
-            "time": "2013-11-07 02:15:35"
+            "time": "2013-11-07 15:03:16"
         }
     ],
     "packages-dev": [

@@ -1,4 +1,4 @@
-<?php if ($this->getConfig('site', 'env') === 'development') : ?>
+<?php if ($this->getConfig('site', 'env') === 'development' and isset($e) and $e instanceof Exception) : ?>
 
 	<h1>An Error Occured</h1>
 	<ul>
